@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomeView from '@/components/HomeView';
-import SignUpView from '@/components/SignUpView';
-import ErrorView from '@/components/ErrorView';
+import HomeView from '@/views/HomeView';
+import LogInView from '@/views/LogInView';
+import SignUpView from '@/views/SignUpView';
+import ErrorView from '@/views/ErrorView';
 
 Vue.use(Router);
 
@@ -16,12 +17,17 @@ export default new Router({
       component: HomeView,
     },
     {
-      path: '/signUp',
+      path: '/LogIn',
+      name: 'LogIn',
+      component: LogInView,
+    },
+    {
+      path: '/SignUp',
       name: 'SignUp',
       component: SignUpView,
     },
     {
-      path: '/error',
+      path: '/Error',
       name: 'Error',
       component: ErrorView,
     },

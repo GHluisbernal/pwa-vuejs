@@ -1,5 +1,5 @@
 <template>
-  <footer id="app-footer" class="page-footer center-on-small-only">
+  <footer id="app-footer" class="page-footer fixed-bottom sticky center-on-small-only">
      <!-- <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -34,7 +34,8 @@ export default {
 </script>
 
 <style scoped>
-  #app-footer {
-    padding-top: 0;
-  }
+#app-footer {
+  margin: 0;
+  padding: 0;
+}
 </style>

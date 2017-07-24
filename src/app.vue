@@ -3,7 +3,7 @@
     <app-nav></app-nav>
 
     <main>
-      <transition name="easeInOut">
+      <transition name="easeIn">
         <router-view></router-view>
       </transition>
     </main>
@@ -20,17 +20,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.easeInOut-enter-active {
-  transition: all .3s ease-in;
+main {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.easeInOut-leave-active {
-  transition: all .3s ease-out;
+.easeIn-enter-active {
+   transition: all .4s ease-in;
 }
 
-.easeInOut-enter,
-.easeInOut-leave-to {
-  transform: translateX(10px);
-  opacity: 0;
+.easeIn-enter {
+  transform: translateY(10px);
 }
 </style>
