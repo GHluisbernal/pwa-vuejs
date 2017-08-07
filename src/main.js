@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@/assets/mdbootstrap/css/mdb.css';
 
 import 'jquery';
-// import 'tether';
+import 'popper.js';
 import 'bootstrap';
 
 import Vue from 'vue';

@@ -22,7 +22,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'popper.js$': 'popper.js/dist/popper.js'
     }
   },
   module: {
@@ -44,7 +45,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/jquery'), resolve('node_modules/tether')]
+        include: [resolve('src'), resolve('test'), resolve('node_modules/jquery'), resolve('node_modules/popper.js')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

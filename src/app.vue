@@ -2,7 +2,7 @@
   <div id="app-root">
     <app-nav></app-nav>
 
-    <main>
+    <main class="my-1">
       <transition name="easeIn">
         <router-view></router-view>
       </transition>
@@ -20,11 +20,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-main {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .easeIn-enter-active {
    transition: all .4s ease-in;
 }
